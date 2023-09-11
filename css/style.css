@@ -1,0 +1,33 @@
+h2,h1,h3 {
+font-family: 'Wix Madefor Display', sans-serif;
+}
+
+body {
+font-family: 'Nunito', sans-serif;
+color:black;
+line-height: 1.5;
+}
+
+.top5 {
+    background-color: aqua;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+}
+
+img {
+    filter: grayscale();
+    border-radius: 50%;
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 {
+
+}
