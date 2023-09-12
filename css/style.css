@@ -1,19 +1,65 @@
-h2,h1,h3 {
-font-family: 'Wix Madefor Display', sans-serif;
+/* makes website more flexible and calculates itself*/
+* {
+    box-sizing: border-box;
 }
 
 body {
-font-family: 'Nunito', sans-serif;
-color:#fff;
-line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    /* color: #fff; */
+    margin: 0;
+}
+
+/* contains info int seperated little containers, do not go over 1200px (max width = keep restructure for any shapes) em = padding rem = font sizing */ 
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+#company-name {
+    color: #DEC9E9;
+    font-size: 1.5rem;
+}
+
+#welcome, #top5, #team {
+    padding: 4em 0;
 }
 
 header {
-    justify-content: space-between;
-    align-items: center;
-    color: #DEC9E9;
     background-color: black;
 }
+
+#header {
+    
+}
+
+h1,h2,h3 {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.team-grid {
+    background-color:#7251B5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old */
 
 nav {
     align-items: flex-end;
@@ -99,4 +145,6 @@ h2 + p {
 
 .imagebg > img {
     width: 90%;
+    display: grid;
+    display: table-column 1fr;
 }
