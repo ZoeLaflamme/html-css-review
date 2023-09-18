@@ -6,7 +6,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     line-height: 1.5;
-    /* color: #fff; */
+    color: #fff;
     margin: 0;
 }
 
@@ -30,8 +30,124 @@ header {
     background-color: black;
 }
 
-#header {
-    
+#header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+}
+
+nav ul li {
+    padding-left: 1.125em;
+}
+
+
+nav ul a:link,
+nav ul a:visited {
+    text-decoration: none;
+    color: #DEC9E9;
+}
+
+nav ul a:link,
+nav ul a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* vh = available viewport height */
+#hero-banner {
+    height: 60vh;
+    background-color: #512b9d;
+    /* two dots */
+    background-image: url(../images/ice-cream-cones.jpg);
+    background-repeat: no-repeat;
+    /* cover = take available width and covering it (an shows all of image) */
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome {
+    background-color: #7251B5;
+}
+
+#welcome + p {
+    max-width: 50%;
+}
+
+#top5 {
+    background-color: black;
+    color: #DEC9E9;
+}
+
+#top5 ol {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#top5 li {
+    width: 50%;
+    padding-right: 15%;
+}
+
+#team {
+    background-color: #7251B5;
+
+}
+
+#team h2, #team .team-intro {
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-intro {
+    padding-bottom: 3em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-top: 0%2.5;
+}
+
+.team-grid article {
+    background-color: #6647a6;
+    border-radius: 20px;
+    padding: 2em 0;
+    text-align: center;
+
+}
+
+.team-grid article img {
+    filter: grayscale(100%);
+    border-radius: 50%;
+    width: 80px;
+}
+
+.team-grid h3 {
+    text-transform: uppercase;
+}
+
+.team-grid p {
+    margin-top: 0.25;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 h1,h2,h3 {
@@ -40,10 +156,7 @@ h1,h2,h3 {
 
 h1 {
     font-size: 6rem;
-}
-
-.team-grid {
-    background-color:#7251B5;
+    color: #fff;
 }
 
 
@@ -58,93 +171,3 @@ h1 {
 
 
 
-
-/* old */
-
-nav {
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-top: 0.5em;
-    padding-right: 0.75em;
-    padding-left: 0.75em;
-    padding-bottom: 0.5em;
-    border-radius: 8px;
-}
-
-nav ul {
-display: flex;
-flex-direction:row;
-}
-
-.workers > img {
-    filter: grayscale();
-    border-radius: 50%;
-    width: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.black-bg {
-    background-color:black;
-}
-
-.welcome {
-    background-color: #7251B5;
-    display: flex;
-    padding-bottom: 0%;
-    padding-left: 10%;
-}
-
-.purple-bg {
-    background-color: #7251B5;
-}
-
-footer {
-    background-color: black;
-    text-align: center;
-}
-
-.team {
-    display: inline-block
-}
-
-h2 {
-    text-align: center;
-    padding-top: 5%;
-}
-
-h2 + p {
-    text-align: center;
-    display: flex;
-    padding-left: 35%;
-    padding-right: 35%;
-}
-
-.container {
-    padding: 20px;
-    text-align: left;
-    display: block;
-    padding-right: 70%;
-    color: #DEC9E9;
-}
-
-.workers {
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.wrapper {
-    max-width: fit-content;
-}
-
-.imagebg {
-    background-color: black;
-}
-
-.imagebg > img {
-    width: 90%;
-    display: grid;
-    display: table-column 1fr;
-}
